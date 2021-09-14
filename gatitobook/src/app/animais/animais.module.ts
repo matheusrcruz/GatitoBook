@@ -9,14 +9,19 @@ import { GradeFotoAnimaisComponent } from './grade-foto-animais/grade-foto-anima
 import { CartaoModule } from '../componentes/cartao/cartao.module';
 
 import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
+import { ComentariosComponent } from './detalhe-animal/comentarios/comentarios.component';
+import { MensagemModule } from '../componentes/mensagem/mensagem.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [ListaAnimaisComponent, AnimalComponent, GradeFotoAnimaisComponent, DetalheAnimalComponent],
+  declarations: [ListaAnimaisComponent, AnimalComponent, GradeFotoAnimaisComponent, DetalheAnimalComponent, ComentariosComponent],
   imports: [
     CommonModule,
     AnimaisRoutingModule,
     CartaoModule,
+    MensagemModule,
+    ReactiveFormsModule
   ]
 })
 export class AnimaisModule { }
